@@ -4,3 +4,8 @@ Debug/
 packages/
 bin/
 obj/
+
+
+.DS_Store
+
+ios/DerivedData/
