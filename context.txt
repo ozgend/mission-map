@@ -1,0 +1,19 @@
+Backend
+- Asp.Net Web Api ozellikleri
+- RESTful servis yapilari ve kullanim alanlari
+- Endpoint olusturma, request ve response yapilari tasarlama
+- Cache ve Exception management
+- Guvenlik yaklasimlari, kimlik dogrulama islemleri
+- Token based authentication
+- Thirdparty service integrations (Maps, Geolocation vb.)
+
+Client
+- Xcode proje yapisi ve best practices
+- Uygulama gelistirme ve dagitim yaklasimlari
+- Service client olusturma
+- Cache storage kullanimi, clientside veri saklama ve onbellekleme kullanimi
+- Async http library, rest api kullanimi
+- Token based authentication implementasyonu
+- Harita ve lokasyon servislerinin ozellikleri, kullanim alanlari ve yaklasimlari
+- Navigasyon ozellikleri ve kullanimi
+- Linkedin servisleri incelemesi, servis tanimlari ve kullanimi
