@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleDataService", "SampleDataService\SampleDataService.csproj", "{C67DB98B-5155-4EC7-979A-12C18068CCB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataService", "DataService\DataService.csproj", "{255816A6-3A3E-4B8B-B1A4-3AFB104695A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiProject", "ApiProject\ApiProject.csproj", "{B9FB8BAC-DEAD-44E9-9118-5A01925F7D36}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C67DB98B-5155-4EC7-979A-12C18068CCB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C67DB98B-5155-4EC7-979A-12C18068CCB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C67DB98B-5155-4EC7-979A-12C18068CCB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C67DB98B-5155-4EC7-979A-12C18068CCB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{255816A6-3A3E-4B8B-B1A4-3AFB104695A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{255816A6-3A3E-4B8B-B1A4-3AFB104695A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{255816A6-3A3E-4B8B-B1A4-3AFB104695A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{255816A6-3A3E-4B8B-B1A4-3AFB104695A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9FB8BAC-DEAD-44E9-9118-5A01925F7D36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9FB8BAC-DEAD-44E9-9118-5A01925F7D36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9FB8BAC-DEAD-44E9-9118-5A01925F7D36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9FB8BAC-DEAD-44E9-9118-5A01925F7D36}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
