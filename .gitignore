@@ -4,8 +4,7 @@ Debug/
 packages/
 bin/
 obj/
-
-
 .DS_Store
+DerivedData/
 
-ios/DerivedData/
+*.xcuserstate
