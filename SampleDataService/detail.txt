@@ -1,0 +1,1 @@
+{"Id":1,"CustomerId":1,"Phone":"0123456789","Grade":4.5,"Address":"Çiftehavuzlar mh. Eski Londra Asfaltı cd. YTÜ Davutpaşa Kampüsü Tek. Geliştirme Bölg. No 155/1G, 34420, Esenler/İstanbul","Lat":41.0082376,"Lon":28.9783589,"Name":"Cronom R&D"}
