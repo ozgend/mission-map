@@ -40,3 +40,7 @@ Client
 - hybrid content
 	OttoFlowMobile
 	WebView
+
+- cache 
+	https://developer.apple.com/reference/foundation/nscache?language=objc
+	http://nshipster.com/nsurlcache/
