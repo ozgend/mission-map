@@ -11,9 +11,14 @@ Client
 - Xcode proje yapisi ve best practices
 - Uygulama gelistirme ve dagitim yaklasimlari
 - Service client olusturma
-- Cache storage kullanimi, clientside veri saklama ve onbellekleme kullanimi
+- Cache storage kullanimi, clientside veri saklama
 - Async http library, rest api kullanimi
 - Token based authentication implementasyonu
 - Harita ve lokasyon servislerinin ozellikleri, kullanim alanlari ve yaklasimlari
 - Navigasyon ozellikleri ve kullanimi
 - Linkedin servisleri incelemesi, servis tanimlari ve kullanimi
+
+- app design guidelines / navigation bar
+- udid
+- debugger - profiler
+- hybrid content
