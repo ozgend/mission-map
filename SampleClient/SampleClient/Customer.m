@@ -10,7 +10,8 @@
 
 @implementation Customer
 
-- (id)initWithJsonData:(NSDictionary *)data{
+/*
+ - (id)initWithJsonData:(NSDictionary *)data{
     self = [super init];
     
     if (self && data) {
@@ -19,5 +20,6 @@
     
     return self;
 }
+ */
 
 @end

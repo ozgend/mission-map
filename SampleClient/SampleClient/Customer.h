@@ -11,7 +11,7 @@
 @interface Customer : NSObject
 
 
-@property NSString *Title;
+@property NSString *Name;
 @property NSNumber *Id;
 
 //- (id) initWithJsonData:(NSDictionary*)data;

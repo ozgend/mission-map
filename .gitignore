@@ -8,3 +8,7 @@ obj/
 DerivedData/
 
 *.xcuserstate
+
+*.xcbkptlist
+
+*.xcuserdatad/

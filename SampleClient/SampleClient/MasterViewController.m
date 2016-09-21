@@ -65,15 +65,20 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
 
     NSDictionary *item = self.customers[indexPath.row];
+    
     Customer* customer = [[Customer alloc] init];
     [customer setValuesForKeysWithDictionary:item];
     
-    cell.textLabel.text = customer.Title;
+    cell.textLabel.text = customer.Name;
+    
+    //cell.textLabel.text = [item valueForKey:@"Name"];
+    
     return cell;
 }
 
 - (void)crHttpRequestCompleted:(id)responseObject{
     self.customers = responseObject;
+    [self.tableView reloadData];
 }
 
 - (void)crHttpRequestFailed:(NSError *)error{
