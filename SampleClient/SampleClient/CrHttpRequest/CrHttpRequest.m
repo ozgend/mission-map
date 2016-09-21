@@ -5,8 +5,6 @@
 //
 
 #import "CrHttpRequest.h"
-#import "ObjectParse.h"
-#import "DataHelper.h"
 
 @implementation CrHttpRequest
 @synthesize delegate;
@@ -35,12 +33,9 @@
                             timeoutInterval:8.0];
     if(data){
         NSError *serializationError;
-        id temp = [ObjectParse convertFromObject:data];
-        NSData *postData =
-                [NSJSONSerialization dataWithJSONObject:temp
-                                                options:0
-                                                  error:&serializationError];
-                
+        id temp = [ObjectParse dictionaryForObject:data];
+        NSData *postData = [ObjectParse dataForObject:temp];
+                                
         [request setHTTPMethod:@"POST"];
         [request setValue:[NSString stringWithFormat:@"%lu",(unsigned long)postData.length]
         forHTTPHeaderField:@"Content-Length"];
@@ -70,9 +65,7 @@
             if ([response isKindOfClass:[NSHTTPURLResponse class]]) {
                 NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
                 
-                NSLog(@"CrHttpRequest HTTP-%d error = %@",
-                      httpResponse.statusCode,
-                      error);
+                NSLog(@"CrHttpRequest HTTP-%ld error = %@", (long)httpResponse.statusCode, error);
             }
                         
             dispatch_async(dispatch_get_main_queue(), ^{
@@ -84,9 +77,12 @@
         
         dispatch_async(dispatch_get_main_queue(), ^{
             NSLog(@"CrHttpRequest - dispatch_async success");
-            NSString *responseString = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
-			id responseObject = [ObjectParse convertFromJson:responseString];
+            //NSString *responseString = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
+			//id responseObject = [ObjectParse dictionaryForJsonString:responseString];
             
+            //id responseObject = [NSJSONSerialization JSONObjectWithData:responseData options:nil error:nil];
+            
+            id responseObject = [ObjectParse objectForJsonData:responseData];
             [self.delegate crHttpRequestCompleted:responseObject];
         });
     

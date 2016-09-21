@@ -29,6 +29,7 @@
 		E106D7341D92D617002B0072 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = E106D7231D92D617002B0072 /* SBJsonTokeniser.m */; };
 		E106D7351D92D617002B0072 /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = E106D7251D92D617002B0072 /* SBJsonUTF8Stream.m */; };
 		E106D7361D92D617002B0072 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = E106D7271D92D617002B0072 /* SBJsonWriter.m */; };
+		E18AA84E1D92F84500C4A23F /* Customer.m in Sources */ = {isa = PBXBuildFile; fileRef = E18AA84D1D92F84500C4A23F /* Customer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,8 @@
 		E106D7251D92D617002B0072 /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
 		E106D7261D92D617002B0072 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		E106D7271D92D617002B0072 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		E18AA84C1D92F84500C4A23F /* Customer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Customer.h; sourceTree = "<group>"; };
+		E18AA84D1D92F84500C4A23F /* Customer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Customer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,7 @@
 		E106D6EC1D92D5EE002B0072 /* SampleClient */ = {
 			isa = PBXGroup;
 			children = (
+				E18AA84B1D92F81C00C4A23F /* Models */,
 				E106D7071D92D617002B0072 /* CrHttpRequest */,
 				E106D6F01D92D5EE002B0072 /* AppDelegate.h */,
 				E106D6F11D92D5EE002B0072 /* AppDelegate.m */,
@@ -175,6 +179,15 @@
 				E106D7271D92D617002B0072 /* SBJsonWriter.m */,
 			);
 			path = SBJson;
+			sourceTree = "<group>";
+		};
+		E18AA84B1D92F81C00C4A23F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E18AA84C1D92F84500C4A23F /* Customer.h */,
+				E18AA84D1D92F84500C4A23F /* Customer.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +279,7 @@
 				E106D7331D92D617002B0072 /* SBJsonStreamWriterState.m in Sources */,
 				E106D72D1D92D617002B0072 /* SBJsonStreamParser.m in Sources */,
 				E106D72F1D92D617002B0072 /* SBJsonStreamParserAdapter.m in Sources */,
+				E18AA84E1D92F84500C4A23F /* Customer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +428,7 @@
 				E106D7061D92D5EE002B0072 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

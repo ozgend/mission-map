@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CrHttpRequest.h"
 
 @class DetailViewController;
 
-@interface MasterViewController : UITableViewController
+@interface MasterViewController : UITableViewController <CrHttpRequestCallback>
 
 @property (strong, nonatomic) DetailViewController *detailViewController;
 

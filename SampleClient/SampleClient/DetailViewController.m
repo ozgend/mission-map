@@ -36,6 +36,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     [self configureView];
+    
+    //https://api.myjson.com/bins/1i20c
 }
 
 - (void)didReceiveMemoryWarning {
