@@ -10,14 +10,26 @@
 
 @implementation ObjectParse
 
-+ (id) convertFromJson:(NSString *)response
-{
-    SBJsonParser *parser = [[SBJsonParser alloc] init];
-    id result = [parser objectWithString:response];
-    return result;
++ (id)objectForJsonData:(NSData *)jsonData{
+    return [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:nil];
 }
 
-+ (id) convertFromObject:(id)object{
++ (id) objectForJsonString:(NSString *)jsonString
+{
+    //SBJsonParser *parser = [[SBJsonParser alloc] init];
+    //id result = [parser objectWithString:response];
+    //return result;
+   
+    NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
+    return [self objectForJsonData:jsonData];
+}
+
++ (NSData *)dataForObject:(id)object{
+    id temp = [self dictionaryForObject:object];
+    return [NSJSONSerialization dataWithJSONObject:temp options:0 error:nil];
+}
+
++ (id) dictionaryForObject:(id)object{
     NSMutableDictionary *dict = [NSMutableDictionary dictionary];
     
     id YourClass = [object class];
@@ -34,5 +46,7 @@
     
     return dict;
 }
+
+
 
 @end

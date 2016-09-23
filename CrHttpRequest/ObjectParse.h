@@ -8,7 +8,9 @@
 
 @interface ObjectParse : NSObject
 
-+ (id) convertFromJson:(NSString *)response;
-+ (id) convertFromObject:(id)object;
++ (id) objectForJsonData:(NSData *)response;
++ (id) objectForJsonString:(NSString *)response;
++ (NSData*) dataForObject:(id)object;
++ (id) dictionaryForObject:(id)object;
 
 @end

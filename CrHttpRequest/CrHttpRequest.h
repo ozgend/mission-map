@@ -7,6 +7,8 @@
 #define KEY_AUTH_HEADER @"Cr-Authentication-Token"
 
 #import <Foundation/Foundation.h>
+#import "ObjectParse.h"
+#import "DataHelper.h"
 
 @protocol CrHttpRequestCallback <NSObject>
 
